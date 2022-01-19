@@ -2,22 +2,18 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>
-			Mod Studio
-		</title>
+		<title>Mod Studio</title>
 	</head>
 	<body>
 		<!-- верхняя часть страницы с навигацией и логотипом бренда -->
 		<header>
+			<img src="pic/brand.jpg" alt="Brand Image">
 			<nav>
-				<a href="#">Biography</a>
-				<a href="#">Designers</a>
-				<a href="#">Testimonials</a>
-				<a href="#">Strong points</a> 
+				<a href="#biography">Biography</a>
+				<a href="#designers">Designers</a>
+				<a href="#testimonials">Testimonials</a>
+				<a href="#strengths">Strong points</a> 
 			</nav>
-			<figure>
-				<img src="" alt="Brand Image">
-			</figure>
 		</header>
 		<!-- основная часть страницы -->
 		<main>
@@ -25,88 +21,78 @@
 			<article>
 				<h1>Atlas studio</h1>
 				<h2>Modern web studio</h2>
-				<figure>
-					<img src = "" alt = "Main Image">
-				</figure>
+				<img src = "pic/logo.jpg" alt = "Main Image">
 				<!-- информационный блок -->
-				<section>
-					<h3>Biography</h3>
-					<h4>Katya Mills</h4>
-					<p>Art Director </p>
-					<p>Scenography / Styling / Creative photography / Design</p>
+				<section id = "biography">
+					<h2>Biography</h2>
 					<figure>
-						<img src = "" alt = "Katya Mills Photo">
-						<figcaption>Katy Mills</figcaption>
+						<img src = "pic/katy.jpg" alt = "Katya Mills Photo">
+						<figcaption>
+							<b><p>Katy Mills<p></b>
+							<i><p>Art Director</p>
+							<p>Scenography / Styling / Creative photography / Design</p></i>
+						</figcaption>
 					</figure>
-					<!-- сопутствующая информация-->
-					<aside>
-						<q>I just really want to do good work and work with some great people, people who challange me</q>
-						<figcaption>Katy Mills</figcaption>
+						<blockquote>I just really want to do good work and work with some great people, people who challange me</blockquote>
 					</aside>
 				</section>
 				<!-- информационный блок -->
-				<section>
-					<h3>Designers</h3>
-					<section>
-						<h4>Jess Wonder</h4>
-						<p>From/ Be more flower</p>
-						<p>Skills/ Design Strategy / Marketing</p> 
-						<figure>
-							<img src = "" alt = "Jess Wonder Photo">
-							<figcaption>Jeff Wonder</figcaption>
-						</figure>
-					</section>
-					<section>
-						<h4>Kameron Clein</h4> 
-						<p>From/ Be more flower</p> 
-						<p>Skills/ Design Strategy / Marketing</p> 
-						<figure>
-							<img src = "" alt = "Cameron Clein Photo">
-							<figcaption>Cameron Clein</figcaption>
-						</figure>
-					</section>
-					<section>
-						<h4>Louisse Red</h4>  
-						<p>From/ Be more flower</p> 
-						<p>Skills/ Design Strategy / Marketing</> 
-						<figure>
-							<img src = "" alt = "Louisse Red Photo">
-							<figcaption>Louisse Red</figcaption>
-						</figure>
-					</section>
+				<section id = "designers">
+					<h2>Designers</h2>
+					<figure>
+						<img src = "pic/jess.jpg" alt = "Jess Wonder Photo">
+						<figcaption>
+							<b><p>Jeff Wonder<p></b>
+							<i><p><b>From/</b> Be more flower</p>
+							<p><b>Skills/</b> Design Strategy / Marketing</p></i> 
+						</figcaption>
+					</figure>
+					<figure>
+						<img src = "pic/cameron.jpg" alt = "Cameron Clein Photo">
+						<figcaption>
+							<b><p>Kameron Clein</p></b> 
+							<i><p><b>From/</b> Be more flower</p> 
+							<p><b>Skills/</b> Design Strategy / Marketing</p></i>
+						</figcaption> 
+					</figure>
+					<figure>
+						<img src = "pic/louisse.jpg" alt = "Louisse Red Photo">
+						<figcaption>
+							<b><p>Louisse Red</p></b>
+							<i><p><b>From/</b> Be more flower</p> 
+							<p><b>Skills/</b> Design Strategy / Marketing</p></i> 
+						</figcaption>
+					</figure>
 				</section>
 				<!-- информационный блок -->
-				<section>
-					<h3>Testimonials</h3> 
+				<section id = "testimonials">
+					<h2>Testimonials</h2> 
+					<img src = "pic/test.jpg" alt = "Testimonials Image">
 					<!-- отзыв в форме цитаты -->
-					<q>I just really want to do good work and work with some great people, people who challange me.</q>
-					<figure>
-						<img src = "" alt = "Testimonials Image">
-					</figure>
+					<blockquote>I just really want to do good work and work with some great people, people who challange me.</blockquote>
 				</section>
 				<!-- информационный блок -->
-				<section>
+				<section id = "strengths">
+					<h2>Strong points</h2>
+					<!-- галерея картинок -->
+					<img src = "pic/stgs1.jpg" alt = "Strengths First Image">
+					<img src = "pic/stgs2.jpg" alt = "Strengths Second Image">
+					<img src = "pic/stgs3.jpg" alt = "Strengths Third Image">
 					<h3>Strengths</h3>
-					<p>
-					Interiors 
-					Outdoors 
-					Portraits 
-					Styling 
-					Events 
-					Architecture 
-					Design 
-					Celebrations 
-					Artistic 
-					Fashion 
-					Nature 
-					Creativity
-					</p>
-					<figure>
-						<img src = "" alt = "Strengths First Image">
-					</figure>
-					<figure>
-						<img src = "" alt = "Strengths Second Image">
-					</figure>
+					<ul>
+						<li>Interiors</li> 
+						<li>Outdoors</li> 
+						<li>Portraits</li> 
+						<li>Styling</li> 
+						<li>Events</li> 
+						<li>Architecture</li> 
+						<li>Design</li> 
+						<li>Celebrations</li> 
+						<li>Artistic</li> 
+						<li>Fashion</li> 
+						<li>Nature</li> 
+						<li>Creativity</li>
+					</ul>
 				</section>
 			</article>
 		</main>
