@@ -3,58 +3,68 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Mod Studio</title>
+		<style>
+			:root {font-size : 16px}
+			* {border: solid red 1px}
+			div.logoOuter {margin: auto; background-image: url('pic/bg.png'); min-height: 630px; position: relative}
+			div.logoInner {background-color: white; min-width: 70%; min-height: 70%; position: absolute; left: 15%; top: 15%; text-align : center}
+			img.katyImg {box-sizing: border-box; width: 49%; vertical-align: top; padding: 3rem; min-height: 840px}
+			div.bio {box-sizing: border-box; display: inline-block; width: 49%; padding: 3rem; position: relative; min-height : 840px}
+			h2.biography {text-align: center}
+			section.katy {position: absolute; top: 30%}
+			h2.designers {text-align: center}
+			figure.jess {box-sizing: border-box; display: inline-block; width: 45%; margin: 2%; vertical-align: top}
+			img.jess {width: 100%}
+			figure.cameron {box-sizing: border-box; display: inline-block; width: 21%; margin: 2%; vertical-align: top}
+			img.cameron {width: 100%}
+			figure.louisse {box-sizing: border-box; display: inline-block; width: 21%; margin: 2%; vertical-align: top}
+			img.louisse {width: 100%}
+		</style>
 	</head>
 	<body>
 		<!-- основная часть страницы -->
 		<main>
-			<!-- меню в основной секции в отсутствие хедера --> 
-			<nav>
-				<a href="#biography">Biography</a>
-				<a href="#designers">Designers</a>
-				<a href="#testimonials">Testimonials</a>
-				<a href="#strengths">Strong points</a> 
-			</nav>
 			<!-- основная информация страницы -->
 			<article>
-				<h1>Atlas studio</h1>
-				<h2>Modern web studio</h2>
-				<br>
-				<!-- информационный блок -->
-				<section id="biography">
-					<h2>Biography</h2>
-					<figure>
-						<img src="pic/katy.png" alt="Katya Mills Photo">
-						<figcaption>
-							<h3>Katy Mills</h3>
-							<p>Art Director<br>
-							Scenography / Styling / Creative photography / Design</p>
-						</figcaption>
-					</figure>
-					<blockquote>I just really want to do good work and work with some great people, people who challange me</blockquote>
-				</section>
-				<!-- информационный блок -->
-				<section id="designers">
-					<h2>Designers</h2>
-					<figure>
-						<img src="pic/jess.png" alt="Jess Wonder Photo">
+				<!-- логотип -->
+				<div class="logoOuter">
+					<div class="logoInner">
+						<h1>Atlas studio</h1>
+						<h2 class="logoInner">Modern web studio</h2>
+					</div>
+				</div>
+				<!-- информация о katy mills -->
+				<h2 id="biography" class="biography">Biography</h2>
+				<img class="katyImg" src="pic/katy.png" alt="Katya Mills Photo">
+				<div class="bio">
+					<section class="katy">
+						<h3>Katy Mills</h3>
+						<p>Art Director<br>
+						Scenography / Styling / Creative photography / Design</p>
+						<blockquote>I just really want to do good work and work with some great people, people who challange me</blockquote>
+					</section>
+				</div>
+				<!-- информация о дизайнерах -->
+				<section>
+					<h2 id="designers" class="designers">Designers</h2>
+					<figure class="jess">
+						<img class="jess" src="pic/jess.png" alt="Jess Wonder Photo">
 						<figcaption>
 							<h3>Jess Wonder</h3>
 							<p>From/ Be more flower<br>
 							Skills/ Design Strategy / Marketing</p> 
 						</figcaption>
 					</figure>
-					<br>
-					<figure>
-						<img src="pic/cameron.png" alt="Cameron Clein Photo">
+					<figure class="cameron">
+						<img class="cameron" src="pic/cameron.png" alt="Cameron Clein Photo">
 						<figcaption>
-							<h3>Kameron Clein</h3> 
+							<h3>Cameron Clein</h3> 
 							<p>From/</b> Be more flower<br> 
 							Skills/ Design Strategy / Marketing</p>
 						</figcaption> 
 					</figure>
-					<br>
-					<figure>
-						<img src="pic/louisse.png" alt="Louisse Red Photo">
+					<figure class="louisse">
+						<img class="louisse" src="pic/louisse.png" alt="Louisse Red Photo">
 						<figcaption>
 							<h3>Louisse Red</h3>
 							<p>From/ Be more flower<br> 
@@ -97,6 +107,13 @@
 						<li>Creativity</li>
 					</ul>
 				</section>
+				<!-- меню в основной секции в отсутствие футера --> 
+				<nav>
+					<a href="#biography">Biography</a>
+					<a href="#designers">Designers</a>
+					<a href="#testimonials">Testimonials</a>
+					<a href="#strengths">Strong points</a> 
+				</nav>
 			</article>
 		</main>
 	</body>
