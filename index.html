@@ -6,19 +6,24 @@
 		<style>
 			:root {font-size : 16px}
 			* {border: solid red 1px}
-			div.logoOuter {margin: auto; background-image: url('pic/bg.png'); min-height: 630px; position: relative}
-			div.logoInner {background-color: white; min-width: 70%; min-height: 70%; position: absolute; left: 15%; top: 15%; text-align : center}
-			img.katyImg {box-sizing: border-box; width: 49%; vertical-align: top; padding: 3rem; min-height: 840px}
-			div.bio {box-sizing: border-box; display: inline-block; width: 49%; padding: 3rem; position: relative; min-height : 840px}
-			h2.biography {text-align: center}
+			section.logoOuter {margin: 3rem; background-image: url('pic/bg.png'); height: 100vh; position: relative}
+			div.logoInner {background-color: white; width: 60%; height: 70%; position: absolute; left: 20%; top: 15%; text-align : center}
+			h1.logoInner {position: relative; top : 5rem}
+			h2.logoInner {position: relative; top : 10rem}
+			img.katyImg {box-sizing: border-box; vertical-align: top; padding: 1rem; width: 48vw}
+			div.bio {box-sizing: border-box; display: inline-block; width: 48vw; padding: 1rem; position: relative; min-height: 100vh}
 			section.katy {position: absolute; top: 30%}
-			h2.designers {text-align: center}
-			figure.jess {box-sizing: border-box; display: inline-block; width: 45%; margin: 2%; vertical-align: top}
+			h2.biography {position: absolute; left: 90%; top: 90%; transform: rotate(0.75turn)}
+			figure.jess {box-sizing: border-box; display: inline-block; width: 45%; margin: 2%; vertical-align: bottom}
 			img.jess {width: 100%}
-			figure.cameron {box-sizing: border-box; display: inline-block; width: 21%; margin: 2%; vertical-align: top}
+			div.designers {box-sizing: border-box; display: inline-block; margin: 2%; vertical-align: top}
+			h2.designers {text-align: center; transform: rotate(0.75turn); padding: 2rem}
+			figure.cameron {box-sizing: border-box; display: inline-block; width: 45%; margin: 2%; vertical-align: bottom}
 			img.cameron {width: 100%}
-			figure.louisse {box-sizing: border-box; display: inline-block; width: 21%; margin: 2%; vertical-align: top}
+			figure.louisse {box-sizing: border-box; display: inline-block; width: 45%; margin: 2%; vertical-align: bottom}
 			img.louisse {width: 100%}
+			h2.testimonials {text-align: center}
+			div.links {box-sizing: border-box; display: inline-block; transform: rotate(0.75turn)}
 		</style>
 	</head>
 	<body>
@@ -27,14 +32,13 @@
 			<!-- основная информация страницы -->
 			<article>
 				<!-- логотип -->
-				<div class="logoOuter">
+				<section class="logoOuter">
 					<div class="logoInner">
-						<h1>Atlas studio</h1>
+						<h1 class="logoInner">Atlas studio</h1>
 						<h2 class="logoInner">Modern web studio</h2>
 					</div>
-				</div>
+				</section>
 				<!-- информация о katy mills -->
-				<h2 id="biography" class="biography">Biography</h2>
 				<img class="katyImg" src="pic/katy.png" alt="Katya Mills Photo">
 				<div class="bio">
 					<section class="katy">
@@ -43,10 +47,10 @@
 						Scenography / Styling / Creative photography / Design</p>
 						<blockquote>I just really want to do good work and work with some great people, people who challange me</blockquote>
 					</section>
+					<h2 id="biography" class="biography">Biography</h2>
 				</div>
 				<!-- информация о дизайнерах -->
 				<section>
-					<h2 id="designers" class="designers">Designers</h2>
 					<figure class="jess">
 						<img class="jess" src="pic/jess.png" alt="Jess Wonder Photo">
 						<figcaption>
@@ -55,30 +59,36 @@
 							Skills/ Design Strategy / Marketing</p> 
 						</figcaption>
 					</figure>
-					<figure class="cameron">
-						<img class="cameron" src="pic/cameron.png" alt="Cameron Clein Photo">
-						<figcaption>
-							<h3>Cameron Clein</h3> 
-							<p>From/</b> Be more flower<br> 
-							Skills/ Design Strategy / Marketing</p>
-						</figcaption> 
-					</figure>
-					<figure class="louisse">
-						<img class="louisse" src="pic/louisse.png" alt="Louisse Red Photo">
-						<figcaption>
-							<h3>Louisse Red</h3>
-							<p>From/ Be more flower<br> 
-							Skills/ Design Strategy / Marketing</p> 
-						</figcaption>
-					</figure>
+					<div class="designers">
+						<h2 id="designers" class="designers">Designers</h2>
+						<figure class="cameron">
+							<img class="cameron" src="pic/cameron.png" alt="Cameron Clein Photo">
+							<figcaption>
+								<h3>Cameron Clein</h3> 
+								<p>From/</b> Be more flower<br> 
+								Skills/ Design Strategy / Marketing</p>
+							</figcaption> 
+						</figure>
+						<figure class="louisse">
+							<img class="louisse" src="pic/louisse.png" alt="Louisse Red Photo">
+							<figcaption>
+								<h3>Louisse Red</h3>
+								<p>From/ Be more flower<br> 
+								Skills/ Design Strategy / Marketing</p> 
+							</figcaption>
+						</figure>
+					</div>
 				</section>
-				<!-- информационный блок -->
-				<section id = "testimonials">
-					<h2>Testimonials</h2> 
+				<!-- информация об отзывах -->
+				<section>
+					<h2 id = "testimonials" class="testimonials">Testimonials</h2> 
 					<!-- набор ссылок -->
-					<a href="www.whitepapers.com">Website</a> 
-					<a href="www.whitepapers.com">Creativity</a> 
-					<a href="www.whitepapers.com">Creativity</a>
+					<div class="links">
+						<a href="www.whitepapers.com">Website</a> 
+						<a href="www.whitepapers.com">Creativity</a> 
+						<a href="www.whitepapers.com">Creativity</a>
+					</div>
+					<img src="pic/stgh1.png" alt="Strengths First Image">
 					<br>
 					<img src="pic/test.png" alt="Testimonials Image">
 					<!-- отзыв в форме цитаты -->
@@ -88,7 +98,6 @@
 				<section id="strengths">
 					<h2>Strong points</h2>
 					<!-- галерея картинок -->
-					<img src="pic/stgh1.png" alt="Strengths First Image">
 					<img src="pic/stgh2.png" alt="Strengths Second Image">
 					<img src="pic/stgh3.png" alt="Strengths Third Image">
 					<h3>Strengths</h3>
