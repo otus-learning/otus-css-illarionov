@@ -4,26 +4,52 @@
 		<meta charset="utf-8">
 		<title>Mod Studio</title>
 		<style>
+			/*<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/butler" type="text/css"/>*/
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+			@import url('https://fontlibrary.org//face/butler');
+
 			:root {font-size : 16px}
-			* {border: solid red 1px}
-			section.logoOuter {margin: 3rem; background-image: url('pic/bg.png'); height: 100vh; position: relative}
+			/* {border: solid red 1px} */
+			p.menu {text-align: center; margin: 0%; font-family: 'ButlerRegular'; font-size: 2rem;}
+			section.logoOuter {margin-left: 10%; background-image: url('pic/bg.png'); height: 90vh; width: 80vw; position: relative}
 			div.logoInner {background-color: white; width: 60%; height: 70%; position: absolute; left: 20%; top: 15%; text-align : center}
-			h1.logoInner {position: relative; top : 5rem}
-			h2.logoInner {position: relative; top : 10rem}
-			img.katyImg {box-sizing: border-box; vertical-align: top; padding: 1rem; width: 48vw}
-			div.bio {box-sizing: border-box; display: inline-block; width: 48vw; padding: 1rem; position: relative; min-height: 100vh}
-			section.katy {position: absolute; top: 30%}
-			h2.biography {position: absolute; left: 90%; top: 90%; transform: rotate(0.75turn)}
-			figure.jess {box-sizing: border-box; display: inline-block; width: 45%; margin: 2%; vertical-align: bottom}
+			h1.logoInner {font-family: 'ButlerRegular'; font-size: 6rem; margin: 0%; margin-top: 20%}
+			h2.logoInner {font-family: 'ButlerRegular'; font-size: 1rem}
+			img.katyImg {box-sizing: border-box; vertical-align: top; padding: 5%; width: 48vw; padding-bottom: 0%}
+			div.bio {box-sizing: border-box; display: inline-block; width: 48vw; padding: 1%; position: relative; min-height: 100vh}
+			section.katy {position: absolute; top: 20%}
+			h3.katy{font-family: 'ButlerRegular'; font-size: 6rem}
+			p.katy {font-family: 'Roboto'; font-size: 1rem}
+			blockquote.bio {font-family: 'ButlerRegular'; font-size: 2rem; font-weight: bold; width: 80%; margin: 0%; min-height: 50vh}
+			h2.biography {position: absolute; left: 95%; top: 95%; transform: rotate(0.75turn); font-family: 'Roboto'; font-size: 1.1rem; font-weight: bold}
+			span.boldSpan {font-weight: bold}
+			figure.jess {box-sizing: border-box; display: inline-block; width: 43%; margin: 0%; margin-bottom: 1%; margin-right: 2%; vertical-align: bottom; font-family: 'Roboto'; font-size: 1rem;}
 			img.jess {width: 100%}
-			div.designers {box-sizing: border-box; display: inline-block; margin: 2%; vertical-align: top}
-			h2.designers {text-align: center; transform: rotate(0.75turn); padding: 2rem}
-			figure.cameron {box-sizing: border-box; display: inline-block; width: 45%; margin: 2%; vertical-align: bottom}
+			figcaption.jess {margin-left: 30%}
+			div.designers {box-sizing: border-box; display: inline-block; width: 48%; margin: 1%; vertical-align: bottom}
+			h2.designers {text-align: center; transform: rotate(0.75turn); padding: 0%; padding-bottom: 7%; font-family: 'Roboto'; font-size: 1.1rem; font-weight: bold}
+			figure.cameron {box-sizing: border-box; display: inline-block; width: 48%; vertical-align: bottom; margin: 0%; margin-right: 1%; font-family: 'Roboto'; font-size: 1rem;}
 			img.cameron {width: 100%}
-			figure.louisse {box-sizing: border-box; display: inline-block; width: 45%; margin: 2%; vertical-align: bottom}
+			figure.louisse {box-sizing: border-box; display: inline-block; width: 48%; vertical-align: bottom; margin: 0%; margin-left: 2%; font-family: 'Roboto'; font-size: 1rem;}
 			img.louisse {width: 100%}
-			h2.testimonials {text-align: center}
-			div.links {box-sizing: border-box; display: inline-block; transform: rotate(0.75turn)}
+			h2.testimonials {margin-left: 8%; font-family: 'Roboto'; font-size: 1.1rem;}
+			div.links {box-sizing: border-box; display: inline-block; margin: 0%; text-align: left; width: 7vw; line-height: 0.25rem; font-weight: bold; height: 30vh; vertical-align: top; font-family: 'Roboto'; font-size: 1rem;}
+			div.links1 {transform: rotate(0.75turn); padding-top: 90%; padding-bottom: 90%; margin-top: 100%;}
+			div.links2 {transform: rotate(0.75turn); padding-top: 90%; padding-bottom: 90%}
+			div.links3 {transform: rotate(0.75turn); padding-top: 90%; padding-bottom: 90%}
+			img.test1 {box-sizing: border-box; display: inline-block; width: 37vw}
+			div.cite {box-sizing: border-box; display: inline-block; width: 20vw; vertical-align: top; margin-left: 17%; margin-right: 16%}
+			blockquote.cite {margin: 0%; font-family: 'ButlerRegular'; font-size: 2rem; text-align: center}
+			img.test2 {margin-top: 5%; width: 100%}
+			div.strong {position: relative; margin: 3%}
+			h2.strong {box-sizing: border-box; display: inline-block; position: absolute; transform: rotate(0.75turn); left: 30%; top: 40%; margin: 0%; font-family: 'Roboto'; font-size: 1.1rem; font-weight: bold}
+			h3.strengths {box-sizing: border-box; display: inline-block; margin: 0%; margin-left: 60%; font-family: 'ButlerRegular'; font-size: 5rem;}
+			img.stghs2 {width: 30vw; height: 100vh}
+			img.stghs3 {width: 30vw; height: 100vh}
+			div.strengths {box-sizing: border-box; display: inline-block; vertical-align: top;/* margin-left: 5%; margin-right: 10%;*/ width: 30vw; height: 100vh}
+			ul.strengths {list-style-type: none; font-family: 'ButlerRegular'; font-size: 2rem; margin: 0%}	
+			div.stgh2 {box-sizing: border-box; display: inline-block; width: 6vw; height: 100vh; vertical-align: top; overflow: hidden; margin: 0%; padding: 0%}
+			img.stgh3 {height: 100vh}
 		</style>
 	</head>
 	<body>
@@ -32,6 +58,7 @@
 			<!-- основная информация страницы -->
 			<article>
 				<!-- логотип -->
+				<p class="menu">&#9776</p>
 				<section class="logoOuter">
 					<div class="logoInner">
 						<h1 class="logoInner">Atlas studio</h1>
@@ -42,10 +69,10 @@
 				<img class="katyImg" src="pic/katy.png" alt="Katya Mills Photo">
 				<div class="bio">
 					<section class="katy">
-						<h3>Katy Mills</h3>
-						<p>Art Director<br>
+						<h3 class="katy">Katy Mills</h3>
+						<p class="katy">Art Director<br>
 						Scenography / Styling / Creative photography / Design</p>
-						<blockquote>I just really want to do good work and work with some great people, people who challange me</blockquote>
+						<blockquote class="bio">&#8220I just really want to do good work and work with some great people, people who challange me&#8221</blockquote>
 					</section>
 					<h2 id="biography" class="biography">Biography</h2>
 				</div>
@@ -53,10 +80,10 @@
 				<section>
 					<figure class="jess">
 						<img class="jess" src="pic/jess.png" alt="Jess Wonder Photo">
-						<figcaption>
-							<h3>Jess Wonder</h3>
-							<p>From/ Be more flower<br>
-							Skills/ Design Strategy / Marketing</p> 
+						<figcaption class="jess">
+								<h3>Jess Wonder</h3>
+								<p><span class="boldSpan">From/</span> Be more flower<br>
+								<span class="boldSpan">Skills/</span> Design Strategy / Marketing</p> 
 						</figcaption>
 					</figure>
 					<div class="designers">
@@ -65,64 +92,83 @@
 							<img class="cameron" src="pic/cameron.png" alt="Cameron Clein Photo">
 							<figcaption>
 								<h3>Cameron Clein</h3> 
-								<p>From/</b> Be more flower<br> 
-								Skills/ Design Strategy / Marketing</p>
+								<p><span class="boldSpan">From/</span> Be more flower<br> 
+								<span class="boldSpan">Skills/</span> Design Strategy / Marketing</p>
 							</figcaption> 
 						</figure>
 						<figure class="louisse">
 							<img class="louisse" src="pic/louisse.png" alt="Louisse Red Photo">
 							<figcaption>
 								<h3>Louisse Red</h3>
-								<p>From/ Be more flower<br> 
-								Skills/ Design Strategy / Marketing</p> 
+								<p><span class="boldSpan">From/</span> Be more flower<br> 
+								<span class="boldSpan">Skills/</span> Design Strategy / Marketing</p> 
 							</figcaption>
 						</figure>
 					</div>
 				</section>
 				<!-- информация об отзывах -->
 				<section>
-					<h2 id = "testimonials" class="testimonials">Testimonials</h2> 
+					<div class="testimonials">
+						<h2 id ="testimonials" class="testimonials">Testimonials</h2> 
+					</div>
 					<!-- набор ссылок -->
 					<div class="links">
-						<a href="www.whitepapers.com">Website</a> 
-						<a href="www.whitepapers.com">Creativity</a> 
-						<a href="www.whitepapers.com">Creativity</a>
+						<div class="links1">
+							<p>Website</p>
+							<a href="www.whitepapers.com">www.whitepapers.com</a>
+						</div>
+						<div class="links2">
+							<p>Creativity</p>
+							<a href="www.whitepapers.com">www.whitepapers.com</a> 
+						</div>
+						<div class="links3">
+							<p>Creativity</p>
+							<a href="www.whitepapers.com">www.whitepapers.com</a>
+						</div>
 					</div>
-					<img src="pic/stgh1.png" alt="Strengths First Image">
-					<br>
-					<img src="pic/test.png" alt="Testimonials Image">
-					<!-- отзыв в форме цитаты -->
-					<blockquote>I just really want to do good work and work with some great people, people who challange me.</blockquote>
+					<img class="test1" src="pic/stgh1.png" alt="Testimonials Image #1">
+					<div class="cite">
+						<!-- отзыв в форме цитаты -->
+						<blockquote class="cite">I just really want to do good work and work with some great people, people who challange me.</blockquote>
+						<img class="test2" src="pic/test.png" alt="Testimonials Image #2">
+					</div>
 				</section>
 				<!-- информационный блок -->
 				<section id="strengths">
-					<h2>Strong points</h2>
+					<div class="strong">
+						<h2 class="strong">Strong points</h2>
+						<h3 class="strengths">Strengths</h3>
+					</div>
 					<!-- галерея картинок -->
-					<img src="pic/stgh2.png" alt="Strengths Second Image">
-					<img src="pic/stgh3.png" alt="Strengths Third Image">
-					<h3>Strengths</h3>
-					<ul>
-						<li>Interiors</li> 
-						<li>Outdoors</li> 
-						<li>Portraits</li> 
-						<li>Styling</li> 
-						<li>Events</li> 
-						<li>Architecture</li> 
-						<li>Design</li> 
-						<li>Celebrations</li> 
-						<li>Artistic</li> 
-						<li>Fashion</li> 
-						<li>Nature</li> 
-						<li>Creativity</li>
-					</ul>
+					<img class="stghs3" src="pic/stgh3.png" alt="Strengths Second Image">
+					<img class="stghs2" src="pic/stgh2.png" alt="Strengths Third Image">
+					<div class="strengths">
+						<ul class="strengths">
+							<li>Interiors</li> 
+							<li>Outdoors</li> 
+							<li>Portraits</li> 
+							<li>Styling</li> 
+							<li>Events</li> 
+							<li>Architecture</li> 
+							<li>Design</li> 
+							<li>Celebrations</li> 
+							<li>Artistic</li> 
+							<li>Fashion</li> 
+							<li>Nature</li> 
+							<li>Creativity</li>
+						</ul>
+					</div>
+					<div class="stgh2">
+						<img class="stghs3" src="pic/stgh2.png" alt="Strengths Third Image">
+					</div>
 				</section>
 				<!-- меню в основной секции в отсутствие футера --> 
-				<nav>
+				<!--nav>
 					<a href="#biography">Biography</a>
 					<a href="#designers">Designers</a>
 					<a href="#testimonials">Testimonials</a>
 					<a href="#strengths">Strong points</a> 
-				</nav>
+				</nav-->
 			</article>
 		</main>
 	</body>
