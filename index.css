@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fontlibrary.org//face/butler');
+
+:root 
+{
+	font-size: 16px;
+}
+
+* 
+{
+	/*border: solid red 1px;*/
+	margin: 0%; 
+	padding: 0%; 
+	box-sizing: border-box; 
+	font-family: 'ButlerRegular';
+}
+
+p.menu 
+{
+	text-align: center;
+	font-size: 2rem;
+}
+
+section.logoOuter
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	background-image: url('pic/bg.png');
+	position: relative;
+	height: 90vh;
+	width: 80vw;
+}
+
+div.logoInner 
+{
+	padding: 10%;
+	background-color: white;
+	position: absolute;
+	left: 50%; 
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center; 
+}
+
+h1.logoInner
+{
+	font-size: 6rem;
+	font-weight: 400; 
+}
+
+h2.logoInner 
+{
+	font-family: 'Roboto'; 
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+section.katy 
+{
+	display: inline-block;
+	position: relative;
+	width: 100vw;
+}
+
+img.katyImg 
+{
+	vertical-align: top;
+	width: 50%;
+	max-height: 840%;
+	float: left;
+	padding: 5%;
+}
+
+div.katyDiv
+{
+	padding: 5%; 
+	vertical-align: top; 
+	width: 50%; 
+	float: right; 
+	transform: translate(0%, 30%);
+}
+
+h3.katy
+{
+	padding-bottom: 1rem;
+	font-size: 6rem;
+	font-weight: 400;
+}
+
+p.katy 
+{
+	padding-bottom: 1rem;
+	font-family: 'Roboto';
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+blockquote.bio 
+{
+	font-size: 2rem; 
+	font-weight: 400; 
+	width: 85%
+}
+
+h2.biography
+{
+	position: absolute; 
+	left: 90%; 
+	font-family: 'Roboto'; 
+	font-size: 1.1rem; 
+	font-weight: 700; 
+	transform: rotate(0.75turn);
+}
+
+section.designers 
+{
+	display: inline-block;
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Roboto';
+	font-size: 1rem; 
+	position: relative
+}
+
+h2.designers
+{	text-align: center;
+	transform: rotate(0.75turn) translate(-4%, 17vw); 
+	font-family: 'Roboto'; 
+	font-size: 1.1rem; 
+	font-weight:700; 
+}
+
+span.boldSpan
+{
+	font-weight: 700; 
+}
+
+figure.jess
+{
+	padding-right: 1%;
+	display: inline-block;
+	vertical-align: bottom;
+	width: 45%;
+}
+
+img.jess 
+{
+	width: 100%;
+}
+
+figcaption.jess
+{
+	margin-left: 30%;
+}
+
+div.designers 
+{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 50%;
+}
+
+figure.cameron
+{
+	width: 50%;
+	float: left;
+}
+
+img.cameron 
+{
+	width: 88.8%;
+}
+
+figure.louisse
+{
+	width: 50%;
+	float: right;
+}
+
+img.louisse
+{
+	width: 90%;
+}
