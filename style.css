@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fontlibrary.org//face/butler');
+
+:root 
+{
+	font-size: 16px;
+}
+
+* 
+{
+	/*border: solid red 1px;*/
+	margin: 0%; 
+	padding: 0%; 
+	box-sizing: border-box; 
+	font-family: 'ButlerRegular';
+}
+
+.invisible
+{
+	display: none;
+}
+
+p.menu 
+{
+	text-align: center;
+	font-size: 2rem;
+}
+
+section.logoOuter
+{
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	background-image: url('pic/bg.png');
+	position: relative;
+	height: 90vh;
+	width: 80vw;
+}
+
+div.logoInner 
+{
+	padding: 10%;
+	background-color: white;
+	position: absolute;
+	left: 50%; 
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center; 
+}
+
+h1.logoInner
+{
+	font-size: 6rem;
+	font-weight: 400; 
+}
+
+h2.logoInner 
+{
+	font-family: 'Roboto'; 
+	font-size: 1.1rem;
+	font-weight: 700;
+}
