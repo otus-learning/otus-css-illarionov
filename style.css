@@ -1,63 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-@import url('https://fontlibrary.org//face/butler');
-
 :root 
 {
 	font-size: 16px;
 }
 
+html, body
+{
+	background-color: white;
+}
+
 * 
 {
 	/*border: solid red 1px;*/
-	margin: 0%; 
-	padding: 0%; 
+	margin: 0; 
+	padding: 0; 
 	box-sizing: border-box; 
-	font-family: 'ButlerRegular';
+	background-color: white;
 }
 
 .invisible
 {
 	display: none;
 }
-
+/*
 p.menu 
 {
 	text-align: center;
 	font-size: 2rem;
 }
+*/
 
-section.logoOuter
+section
 {
-	margin-left: 10vw;
-	margin-right: 10vw;
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-	background-image: url('pic/bg.png');
 	position: relative;
-	height: 90vh;
-	width: 80vw;
+	height: 100vh;
+}
+
+.bg
+{
+	width: 74%; 
+	height: 75%;
+	z-index: 0;
+	position: absolute;
+	left: 50%; 
+	top: 50%;
+	transform: translate(-50%, -50%) /*scale(0.74, 0.75)*/;
 }
 
 div.logoInner 
 {
-	padding: 10%;
-	background-color: white;
+	z-index: 1;
+	width: 38.7vw;
+	height: 42.5vh;
 	position: absolute;
 	left: 50%; 
 	top: 50%;
 	transform: translate(-50%, -50%);
-	text-align: center; 
+	text-align: center;
 }
 
 h1.logoInner
 {
-	font-size: 6rem;
+	transform: translateY(-50%);
+	margin-top: 20.4vh;
+	font-family: 'Butler';
+	font-size: 5.4375rem;
 	font-weight: 400; 
 }
 
 h2.logoInner 
 {
+	transform: translateY(-241.7%);
 	font-family: 'Roboto'; 
-	font-size: 1.1rem;
+	font-size: 1.125rem;
 	font-weight: 700;
 }
+
