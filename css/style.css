@@ -14,7 +14,6 @@ html, body
 	margin: 0; 
 	padding: 0; 
 	box-sizing: border-box; 
-	background-color: white;
 }
 
 .invisible
@@ -33,45 +32,53 @@ section
 {
 	position: relative;
 	height: 100vh;
+	min-width: 900px;
+	min-height: 700px;
 }
 
 .bg
 {
 	width: 74%; 
-	height: 75%;
 	z-index: 0;
 	position: absolute;
-	left: 50%; 
-	top: 50%;
-	transform: translate(-50%, -50%) /*scale(0.74, 0.75)*/;
+	left: 0%; 
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	margin: auto;
 }
 
 div.logoInner 
 {
+	padding-top: 10.5rem;
+	padding-bottom: 9.5rem;
+	padding-left: 4.375rem;
+	padding-right: 4.375rem;
 	z-index: 1;
-	width: 38.7vw;
-	height: 42.5vh;
 	position: absolute;
 	left: 50%; 
 	top: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	font-size: 1.125rem;
+	background-color: white;
+	line-height: 0;
 }
 
 h1.logoInner
 {
-	transform: translateY(-50%);
-	margin-top: 20.4vh;
 	font-family: 'Butler';
-	font-size: 5.4375rem;
-	font-weight: 400; 
+	font-weight: 300; 
+	font-size: 4.83em;
 }
 
 h2.logoInner 
 {
-	transform: translateY(-241.7%);
+	position: absolute;
 	font-family: 'Roboto'; 
-	font-size: 1.125rem;
 	font-weight: 700;
+	font-size: 1em;
+	padding-top: 3.6em;
+	left: 50%;
+	transform: translateX(-50%);
 }
-

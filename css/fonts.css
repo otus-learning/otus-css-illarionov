@@ -12,7 +12,7 @@
 @font-face
 {
 	font-family: 'Roboto';
-	src: local("Roboto"),
+	src: local("Roboto Bold"), local("Roboto-Bold"),
 	url('../fonts/Robotobold.woff2') format('woff2'),
         url('../fonts/Robotobold.woff') format('woff'),
 	url('../fonts/Roboto-Bold.ttf') format('truetype');
@@ -23,7 +23,7 @@
 @font-face
 {
 	font-family: 'Butler';
-	src: local("Butler"),
+	src: local("Butler Light"), local("Butler-Light"),
 	url('../fonts/Butler-Light.woff2') format('woff2'),
         url('../fonts/Butler-Light.woff') format('woff'),
 	url('../fonts/Butler_Light.otf') format('opentype');
@@ -35,7 +35,7 @@
 @font-face
 {
 	font-family: 'Butler';
-	src: local("Butler"),
+	src: local("Butler Bold"), local("Butler-Bold"),
 	url('../fonts/Butler-Bold.woff2') format('woff2'),
         url('../fonts/Butler-Bold.woff') format('woff'),
 	url('../fonts/Butler_Bold.otf') format('opentype');
