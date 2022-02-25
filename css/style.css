@@ -50,10 +50,7 @@ section
 
 div.logoInner 
 {
-	padding-top: 10.5rem;
-	padding-bottom: 9.5rem;
-	padding-left: 4.375rem;
-	padding-right: 4.375rem;
+	padding: 8rem 3rem 7rem;
 	z-index: 1;
 	position: absolute;
 	left: 50%; 
@@ -61,8 +58,8 @@ div.logoInner
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.125rem;
+	line-height: 1.2;
 	background-color: white;
-	line-height: 0;
 }
 
 h1.logoInner
@@ -74,11 +71,8 @@ h1.logoInner
 
 h2.logoInner 
 {
-	position: absolute;
+	margin-bottom: -1.2em;
 	font-family: 'Roboto'; 
 	font-weight: 700;
 	font-size: 1em;
-	padding-top: 3.6em;
-	left: 50%;
-	transform: translateX(-50%);
 }
