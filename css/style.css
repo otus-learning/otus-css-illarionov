@@ -6,6 +6,7 @@
 html, body
 {
 	background-color: white;
+	line-height: 1.2;
 }
 
 * 
@@ -50,29 +51,28 @@ section
 
 div.logoInner 
 {
-	padding: 8rem 3rem 7rem;
+	padding: 1.5em 0.5em 1.4em;
 	z-index: 1;
 	position: absolute;
 	left: 50%; 
 	top: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	font-size: 1.125rem;
-	line-height: 1.2;
+	font-size: 5.5rem;
 	background-color: white;
 }
 
 h1.logoInner
 {
-	font-family: 'Butler';
+	font-family: 'Butler', serif;
 	font-weight: 300; 
-	font-size: 4.83em;
+	font-size: 1em;
 }
 
 h2.logoInner 
 {
 	margin-bottom: -1.2em;
-	font-family: 'Roboto'; 
+	font-family: 'Roboto', sans-serif; 
 	font-weight: 700;
-	font-size: 1em;
+	font-size: 0.2em;
 }
