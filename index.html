@@ -2,13 +2,15 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<link href="css/fonts.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 		<title>Mod Studio</title>
 	</head>
 	<body>
 		<!-- основная часть страницы -->
 		<main>
 			<!-- меню в основной секции в отсутствие хедера --> 
-			<nav>
+			<nav class="invisible">
 				<a href="#biography">Biography</a>
 				<a href="#designers">Designers</a>
 				<a href="#testimonials">Testimonials</a>
@@ -16,24 +18,26 @@
 			</nav>
 			<!-- основная информация страницы -->
 			<article>
-				<h1>Atlas studio</h1>
-				<h2>Modern web studio</h2>
-				<br>
+				<!-- Hero page -->
+				<!-- p class="menu">&#9776</p-->
+				<section class="logoOuter">
+					<img class="bg" src="pic/bg.png">
+					<div class="logoInner">
+						<h1 class="logoInner">Mod&nbspstudio</h1>
+						<h2 class="logoInner">Modern&nbspweb&nbspstudio</h2>
+					</div>
+				</section>
 				<!-- информационный блок -->
-				<section id="biography">
+				<section id="biography" class="invisible">
 					<h2>Biography</h2>
-					<figure>
-						<img src="pic/katy.png" alt="Katya Mills Photo">
-						<figcaption>
-							<h3>Katy Mills</h3>
-							<p>Art Director<br>
-							Scenography / Styling / Creative photography / Design</p>
-						</figcaption>
-					</figure>
+					<img src="pic/katy.png" alt="Katya Mills Photo">
+					<h3>Katy Mills</h3>
+					<p>Art Director<br>
+					Scenography / Styling / Creative photography / Design</p>
 					<blockquote>I just really want to do good work and work with some great people, people who challange me</blockquote>
 				</section>
 				<!-- информационный блок -->
-				<section id="designers">
+				<section id="designers" class="invisible">
 					<h2>Designers</h2>
 					<figure>
 						<img src="pic/jess.png" alt="Jess Wonder Photo">
@@ -63,7 +67,7 @@
 					</figure>
 				</section>
 				<!-- информационный блок -->
-				<section id = "testimonials">
+				<section id="testimonials" class="invisible">
 					<h2>Testimonials</h2> 
 					<!-- набор ссылок -->
 					<a href="www.whitepapers.com">Website</a> 
@@ -75,7 +79,7 @@
 					<blockquote>I just really want to do good work and work with some great people, people who challange me.</blockquote>
 				</section>
 				<!-- информационный блок -->
-				<section id="strengths">
+				<section id="strengths" class="invisible">
 					<h2>Strong points</h2>
 					<!-- галерея картинок -->
 					<img src="pic/stgh1.png" alt="Strengths First Image">
