@@ -35,8 +35,15 @@ section
 	height: 100vh;
 	min-width: 900px;
 	min-height: 700px;
-	margin-bottom: 5rem;
 }
+
+h2
+{
+	font-family: 'Roboto', sans-serif; 
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+
 
 .bg
 {
@@ -73,14 +80,12 @@ h1.logoInner
 h2.logoInner 
 {
 	margin-bottom: -1.2em;
-	font-family: 'Roboto', sans-serif; 
-	font-weight: 700;
 	font-size: 0.2em;
 }
 
 .bioimg
 {
-	float: left;
+	display: inline-block;
 	height: 100%;
 	max-width: 50%;
 	padding-left: 8rem;
@@ -88,11 +93,13 @@ h2.logoInner
 
 .biodiv
 {
-	float: right; 
+
+	display: inline-block;
 	font-size: 5.5rem;
 	height: 100%;
-	max-width: 50%;
-	padding: 10% 8rem 10% 5rem;
+	max-width: 49%;
+	padding: 10% 8rem 10% 4rem;
+	vertical-align: top;
 }
 
 .bioh3
@@ -120,11 +127,10 @@ h2.logoInner
 
 .hbio
 {
-	float: right;
-	font-family: 'Roboto', sans-serif; 
-	font-size: 1.125rem;
-	font-weight: 700;
-	transform: rotate(0.75turn) translate(70%, 50%);
+	position: absolute;
+	top: 97vh;
+	left: 92vw;
+	transform: rotate(0.75turn) translate(50%, 50%);
 }
 
 figure.jess
@@ -149,26 +155,29 @@ div.designers
 
 h2.designers
 {
-	font-family: 'Roboto', sans-serif; 
-	font-size: 1.125rem;
-	font-weight: 700;
-	margin: 5% 0 7% 0;
+	margin: 5% -42% 7% 0;
+	padding-right: 23%;
 	text-align: center;
 	transform: rotate(0.75turn);
 }
 
 figure.designers
 {
+	margin-top: 8%;
 	float: right;
 	font-family: 'Roboto', sans-serif; 
 	font-size: 1rem;
-	margin-left: 1.125rem;
-	width: 45%;
+	width: 25%;
+}
+
+img.louisse
+{
+	width: 90%;
 }
 
 img.kameron
 {
-	width: 98.8%;
+	width: 88.8%;
 }
 
 .sbold
@@ -179,4 +188,9 @@ img.kameron
 figcaption.jess
 {
 	margin-left: 30%;
+}
+
+.clr
+{
+	clear: left;
 }
