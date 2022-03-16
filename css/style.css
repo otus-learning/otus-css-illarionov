@@ -9,6 +9,23 @@ html, body
 	line-height: 1.2;
 }
 
+.maket
+{
+	background: url("../pic/maket.jpg") no-repeat center;
+	background-size: cover;
+	display: none;
+	height: 4559px;
+	left: 0;
+	margin: 0 auto;
+	opacity: 0.5;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 1440px;
+	z-index: 2;
+}
+
+
 * 
 {
 	/*border: solid red 1px;*/
@@ -37,9 +54,17 @@ section
 	min-height: 700px;
 }
 
+h2
+{
+	font-family: 'Roboto', sans-serif; 
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+
+
 .bg
 {
-	width: 74%; 
+	/*width: 74%;*/ 
 	z-index: 0;
 	position: absolute;
 	left: 0%; 
@@ -72,7 +97,130 @@ h1.logoInner
 h2.logoInner 
 {
 	margin-bottom: -1.2em;
-	font-family: 'Roboto', sans-serif; 
-	font-weight: 700;
 	font-size: 0.2em;
+}
+
+.bimgdiv
+{
+	display: inline-block;
+	height: 100%;
+	padding: 0 2% 0 9%;
+	width: 50%;
+}
+
+.bioimg
+{
+	max-height: 100%;
+	object-fit: contain;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.biodiv
+{
+	display: inline-block;
+	font-size: 5.5rem;
+	line-height: 1.3;
+	padding: 5% 4% 0 8%;
+	width: 50%;
+	vertical-align: middle;
+}
+
+.bioh3
+{
+	font-family: 'Butler', serif;
+	font-size: 1em;
+	font-weight: 400; 
+}
+
+.biop
+{
+	color: gray; 
+	font-family: 'Roboto', sans-serif; 
+	font-size: 0.2em;
+	font-weight: 500;
+}
+.biominus
+{
+	font-size: 0.7em;
+	margin-top: 8%;
+}
+
+.biobq
+{
+	font-family: 'Butler', serif;
+	font-size: 0.35em;
+	font-weight: 400; 
+	width: 80%;
+}
+
+.hbio
+{
+	position: absolute;
+	right: 1%;
+	bottom: 5%;
+	transform: rotate(0.75turn);
+	transform-origin: top left;
+}
+
+#designers:after 
+{
+	content: " ";
+	clear: both;
+	display: table;
+}
+
+div.designers
+{
+	padding-top: 8%;
+}
+
+.designers-all.designers-jess
+{
+	margin-right: 8%;
+	margin-top: 0;
+	width: 42%;
+}
+
+img.designers
+{
+	width: 100%;
+}
+
+h2.designers
+{
+	position: absolute;
+	left: 69%;
+	top: 14%;
+	transform: rotate(0.75turn);
+	transform-origin: bottom;
+}
+
+.designers-all
+{
+	float: left;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 1rem;
+	margin-top: 6.5%;
+	width: 24%;
+}
+
+img.louisse
+{
+	width: 90%;
+}
+
+img.kameron
+{
+	width: 88.8%;
+}
+
+.sbold
+{
+	font-weight: 700;
+}
+
+figcaption.jess
+{
+	margin-left: 30%;
 }
