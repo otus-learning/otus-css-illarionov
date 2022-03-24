@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/fonts.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>Mod Studio</title>
@@ -23,23 +24,25 @@
 				<!-- p class="menu">&#9776</p-->
 				<section class="logoOuter">
 					<img class="bg" src="pic/bg.png">
-					<div class="logoInner">
+					<div class="to-center logoInner">
 						<h1 class="logoInner">Mod&nbspStudio</h1>
 						<h2 class="logoInner">Modern&nbspweb&nbspstudio</h2>
 					</div>
 				</section>
 				<!-- информационный блок -->
 				<section id="biography">
-					<h2 class="hbio t-form">Biography</h2>
-					<div class="bimgdiv">
-						<img class="bioimg obj-fit" src="pic/katy.png" alt="Katya Mills Photo">
-					</div><div class="biodiv">
-						<h3 class="bioh3">Katya<br>Mills</h3>
-						<p class="biop">Art Director<br>
-						Scenography / Styling / Creative photography / Design</p>
-						<p class="biominus">-</p>
-						<blockquote class="biobq">“The more I deal with the work as something that is my own, 
-						as something that is personal, the more successful it is.”</blockquote>
+					<div class=bio-wrapper>
+						<h2 class="hbio">Biography</h2>
+						<div class="bimgdiv">
+							<img class="bioimg obj-fit" src="pic/katy.png" alt="Katya Mills Photo">
+						</div><div class="biodiv">
+							<h3 class="bioh3">Katya<br>Mills</h3>
+							<p class="biop">Art Director<br>
+							Scenography / Styling / Creative photography / Design</p>
+							<p class="biominus">-</p>
+							<blockquote class="biobq">“The more I deal with the work as something that is my own, 
+							as something that is personal, the more successful it is.”</blockquote>
+						</div>
 					</div>
 				</section>
 				<!-- информационный блок -->
@@ -72,6 +75,7 @@
 						</figure>
 					</div>
 				</section>
+				<div class="fake-testimonials"></div>
 				<!-- информационный блок -->
 				<section id="testimonials" class="invisible">
 					<h2>Testimonials</h2> 
@@ -86,30 +90,40 @@
 				</section>
 				<!-- информационный блок -->
 				<section id="strengths">
-					<h2 class="stgh-h2 t-form">Strong points</h2>
-					<h3 class="stgh-h3">Strengths</h3>
-					<!-- галерея картинок -->
-					<div class="stgh-flex">
-						<img class="stgh2-img" src="pic/stgh3.png" alt="Strengths second Image">
-						<img class="stgh1-img" src="pic/stgh2.png" alt="Strengths first Image">
-						<ul class="stgh-ul">
-							<li>Interiors</li> 
-							<li>Outdoors</li> 
-							<li>Portraits</li> 
-							<li>Styling</li> 
-							<li>Events</li> 
-							<li>Architecture</li> 
-							<li>Design</li> 
-							<li>Celebrations</li> 
-							<li>Artistic</li> 
-							<li>Fashion</li> 
-							<li>Nature</li> 
-							<li>Creativity</li>
-						</ul>
-						<div class="stgh3-img">
-							<img src="pic/stgh2.png" alt="Strengths third Image">
+					<div class="abs-50-50 stgh-all">
+						<div class="stgh-h2-div">
+							<h2 class="stgh-h2 t-form">Strong points</h2>
 						</div>
-					</div>
+						<!-- галерея картинок -->
+						<div class="stgh-flex">
+							<div class="stgh-img">
+								<img src="pic/stgh3.png" alt="Strengths second Image">
+							</div>
+							<div class="stgh-img">
+								<img src="pic/stgh2.png" alt="Strengths first Image">
+							</div>
+							<div class="stgh-txt">
+								<h3 class="stgh-h3">Strengths</h3>
+								<ul class="stgh-ul">
+									<li>Interiors</li> 
+									<li>Outdoors</li> 
+									<li>Portraits</li> 
+									<li>Styling</li> 
+									<li>Events</li> 
+									<li>Architecture</li> 
+									<li>Design</li> 
+									<li>Celebrations</li> 
+									<li>Artistic</li> 
+									<li>Fashion</li> 
+									<li>Nature</li> 
+									<li>Creativity</li>
+								</ul>
+							</div>
+							<div class="stgh-img">
+								<img src="pic/stgh2.png" alt="Strengths third Image">
+							</div>
+						</div>
+					<div>
 				</section>
 			</article>
 		</main>

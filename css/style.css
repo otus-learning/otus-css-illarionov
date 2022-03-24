@@ -25,6 +25,12 @@ html, body
 	z-index: 2;
 }
 
+.fake-testimonials
+{
+	display: none;
+	height: 900px;
+	width: 1440px;
+}
 
 * 
 {
@@ -50,6 +56,8 @@ section
 {
 	position: relative;
 	height: 100vh;
+	margin: auto;
+	max-width: 1440px;
 	min-width: 900px;
 	min-height: 700px;
 }
@@ -73,14 +81,18 @@ h2
 	margin: auto;
 }
 
-div.logoInner 
+.to-center
 {
-	padding: 1.5em 0.8em 1.4em;
-	z-index: 1;
 	position: absolute;
 	left: 50%; 
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+div.logoInner 
+{
+	padding: 1.5em 0.8em 1.4em;
+	z-index: 1;
 	text-align: center;
 	font-size: 5.5rem;
 	background-color: white;
@@ -99,10 +111,16 @@ h2.logoInner
 	font-size: 0.2em;
 }
 
+.bio-wrapper
+{
+	width: 100%;
+}
+
 .bimgdiv
 {
 	display: inline-block;
-	height: 100%;
+	height: 100vh;
+	max-height: 900px;
 	padding: 0 2% 0 9%;
 	width: 50%;
 }
@@ -160,8 +178,34 @@ h2.logoInner
 .hbio
 {
 	position: absolute;
-	right: 1%;
-	bottom: 5%;
+	right: 0;
+	top: 0;
+	transform: rotate(0.75turn) translateX(-1010%);
+	transform-origin: top left;
+}
+
+@media (max-height: 899px) 
+{
+	.hbio
+	{
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: rotate(0.75turn) translateX(-850%);
+		transform-origin: top left;
+	}
+}
+
+@media (orientation: portrait) 
+{
+	.hbio
+	{
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: rotate(0.75turn) translateX(-700%);
+		transform-origin: top left;
+	}
 }
 
 #designers:after 
@@ -173,7 +217,12 @@ h2.logoInner
 
 div.designers
 {
-	padding-top: 8%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	transform: translateY(12%);
 }
 
 .designers-all.designers-jess
@@ -197,6 +246,18 @@ h2.designers
 	transform-origin: bottom;
 }
 
+@media (max-height: 899px), (orientation: portrait) 
+{
+	h2.designers
+	{
+		position: absolute;
+		left: 69%;
+		top: 10%;
+		transform: rotate(0.75turn);
+		transform-origin: bottom;
+	}
+}
+
 .designers-all
 {
 	float: left;
@@ -214,14 +275,16 @@ img.kameron
 	width: 88.8%;
 }
 
-.sbold
-{
-	font-weight: 700;
-}
-
 figcaption.jess
 {
 	margin-left: 30%;
+}
+
+.abs-50-50
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
 }
 
 .t-form
@@ -244,11 +307,18 @@ figcaption.jess
 	font-weight: 400;
 }
 
+.stgh-all
+{
+	transform: translate(-50%, -58%);
+	width: 100%;
+}
+
 .stgh-flex
 {
 	display: flex;
-	justify-content: space-between;
-	padding-top: 30vh;
+	column-gap: 2%; 
+	justify-content: flex-start;
+	overflow: auto;
 }
 
 .stgh-ul
@@ -258,31 +328,50 @@ figcaption.jess
 	font-weight: 400; 
 	line-height: 1.16;
 	list-style-type: none;
-	padding-top: 2.5%;
-	padding-left: 10%;
-	width: 39%;
+	padding-left: 20%;
 }
 
-.stgh3-img
+.stgh-img
 {
-	overflow: hidden;
-	width: 7%;
+	padding-top: 10%;
+}
+
+.stgh-txt
+{
+	padding-left: 5%;
+	padding-right: 10%;
+}
+
+.stgh-h2-div
+{
+	height: 10rem;
+	position: relative;
+
 }
 
 .stgh-h2
 {
-	left: 33%;
 	position: absolute;
-	top: 25%;
+	left: 33%;
+	bottom:-72%;
+}
+
+@media (max-width: 1299px), (max-height: 740px) 
+{
+	.stgh-h2
+	{
+		position: absolute;
+		left: 2%;
+		bottom: -65%;
+	}
 }
 
 .stgh-h3
 {
+	margin-bottom: 15%;
+	margin-top: 6%;
+
 	font-family: 'Butler', serif;
 	font-weight: 400; 
 	font-size: 5.5rem;
-	position: absolute;
-	right: 20%;
-	top: 17%;
 }
-
