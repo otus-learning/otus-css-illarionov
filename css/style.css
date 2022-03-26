@@ -12,8 +12,8 @@ html, body
 main
 {
 	margin: auto;
-	max-width: 1440px;
-	min-width: 900px;
+	max-width: 90rem;
+	min-width: 56.25rem;
 }
 
 .maket
