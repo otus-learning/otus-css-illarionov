@@ -206,76 +206,88 @@ h2.logoInner
 	}
 }
 
-#designers:after 
+.design-wrapper
 {
-	content: " ";
-	clear: both;
-	display: table;
+	height: 80vh;
+	left: 50%;
+	top: 50%;
+	overflow: auto;
+	position: absolute;
+	transform: translate(-55%, -57%);
+	width: calc(100vw - 8rem);
 }
 
 div.designers
 {
 	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
 	bottom: 0;
-	transform: translateY(12%);
+
+	display: flex;
+	justify-content: space-between;
+	column-gap: 2%;
+	flex-wrap: nowrap;
 }
 
-.designers-all.designers-jess
+@media (min-aspect-ratio: 2/1) 
 {
-	margin-right: 8%;
-	margin-top: 0;
-	width: 42%;
+	.design-wrapper
+	{
+		transform: translate(-55%, -45%);
+		height: 90vh;
+	}
+}
+
+.designers-all
+{	
+	align-self: flex-end;
 }
 
 img.designers
 {
-	width: 100%;
+	width: 30vw;	
+}
+
+@media (max-height: 800px) 
+{
+	img.designers
+	{
+		width: 25vw;	
+	}
+}
+
+img.jess,
+img.louisse,
+img.kameron,
+img.luk,
+img.darth,
+img.bill
+{
+	padding-left: 20%;
+	transition: all 0.5s;
+}
+
+img.jess:hover,
+img.louisse:hover,
+img.kameron:hover,
+img.luk:hover,
+img.darth:hover,
+img.bill:hover
+{
+	padding-left: 0%;
+}
+
+figcaption.designers
+{
+	padding-left: 20%;
 }
 
 h2.designers
 {
 	position: absolute;
-	left: 69%;
-	top: 14%;
-	transform: rotate(0.75turn);
-	transform-origin: bottom;
-}
-
-@media (max-height: 899px), (orientation: portrait) 
-{
-	h2.designers
-	{
-		position: absolute;
-		left: 69%;
-		top: 10%;
-		transform: rotate(0.75turn);
-		transform-origin: bottom;
-	}
-}
-
-.designers-all
-{
-	float: left;
-	margin-top: 6.5%;
-	width: 24%;
-}
-
-img.louisse
-{
-	width: 90%;
-}
-
-img.kameron
-{
-	width: 88.8%;
-}
-
-figcaption.jess
-{
-	margin-left: 30%;
+	right: 2rem;
+	top: 50%;
+	transform: rotate(90deg);
+	transform-origin: bottom right;
 }
 
 .abs-50-50
