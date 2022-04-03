@@ -1,0 +1,395 @@
+main
+{
+	max-width: 56.25rem;
+	min-width: 26rem;
+	margin: auto;
+}
+
+.maket
+{
+	background: url("../pic/maket-small.png") no-repeat center;
+	height: 4641px;
+	width: 428px;
+}
+
+
+section.logoOuter
+{
+	overflow: hidden;
+}
+
+div.menu 
+{
+	background-color: white;
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+	height: 70px;
+	width: 100vw;
+	padding-top: 15px;
+	position: fixed;
+	z-index: 3;
+}
+
+div.logoInner
+{
+	position: absolute;
+	top: 15px;
+	left: 0;
+	transform: initial;
+	height: 43vh;
+	width: 100vw;
+	line-height: 2.1;
+	font-size: 4rem;
+	padding-top: 22vh;
+}
+
+.bg
+{
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	left: -50%;
+	width: auto;
+}
+
+h2.logoInner 
+{
+	font-size: 0.3em;
+	font-weight: 700;
+}
+
+
+.bio-wrapper
+{
+	/*
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: wrap;
+	height: 103vh;
+	justify-content: start;
+	*/
+}
+
+
+.bimgdiv
+{
+	position: absolute;
+	top : 63vh;
+	left: 0;
+
+	padding: 0;
+	height: 40vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.biodiv
+{
+	position: absolute;
+	top : 0;
+	left: 0;
+
+	padding: 0;
+	height: 63vh;
+	width: 100vw;
+	
+	display: grid;
+	grid-template-rows: 30% 45% 1fr;
+}
+
+.biop
+{
+	grid-row-start: 1;
+	grid-row-end: 1;
+
+	width: 40vw;
+	padding-left: 7vw;
+	padding-top: 5vh;
+}
+
+.biobq
+{
+	grid-row-start: 2;
+	grid-row-end: 2;
+
+	width: 93vw;
+	padding-left: 7vw;
+	padding-top: 7vh;
+	text-align: left;
+}
+
+.bioh3
+{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	padding-top: 8vh;
+	padding-left: 8vw;
+	font-size: 0.9em;
+	width: 95vw;
+	z-index: 2;
+}
+
+.biominus
+{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	font-size: 0.7em;
+	padding-left: 3vw;
+	margin-top: 8vh;
+}
+
+.bioimg
+{
+	padding: auto;
+	width: auto;
+	max-height: initial;
+	transform: translate(-15vw, -27vh);
+}
+
+.hbio
+{
+	right: 7vw;
+	top: 5vh;
+	transform: initial;
+	writing-mode: initial;
+}
+
+
+div.designers
+{
+	transform: translateY(-50%);
+	display: flex;
+	width: 100vw;
+	height: 60vh;
+	overflow: auto;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+.designers-jess
+{
+	display: none;
+}
+
+
+.designers-all
+{
+	float: initial;
+	width: auto;
+	padding-left: 8vw;
+	margin-top: 0;
+}
+
+img.louisse
+{
+	width: 62vw;
+	height: 80%;
+}
+
+img.kameron
+{
+	width: 61.5vw;
+	height: 80%;
+}
+
+h2.designers
+{
+	writing-mode: horizontal-tb;
+	transform: initial;
+	top: 44vh;
+	left: 72vw;
+}
+
+.test-grid
+{
+	display: block;
+	transform: initial;
+	top: 16vh;
+}
+
+.bigimg
+{
+	display: none;
+}
+
+.smallimg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 65vh;
+	width: 100vw;
+	padding-left: 7vw;
+	padding-top: 2vh;
+}
+
+.test-quote
+{
+	width: 100vw;
+	padding-bottom: 9vh;
+	padding-left: 6vw;
+	padding-right: 15vw;
+}
+
+.test-small-img
+{
+	width: 85vw;
+}
+
+.test-h2
+{
+	top: -14vh;
+	right: 12vw;
+	left: auto;
+}
+
+.all-links
+{
+	position: absolute;
+	top: 71vh;
+	left: 0;
+	transform: initial;
+	height: 15vh;
+	width: 100vw;
+}
+
+.link-p1
+{
+	left: 7%
+}
+
+.link-a1
+{
+	left: 7%;
+}
+
+.link-p2
+{
+	left: 55%
+}
+
+.link-a2
+{
+	left: 55%;
+}
+
+.link-p3
+{
+	top: 5.5rem;
+	left: 7%;
+}
+
+.link-a3
+{
+	top: 6.5rem;
+	left: 7%;
+}
+
+.stgh-all
+{
+	transform: translateY(1%);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.stgh-h2
+{
+	position: relative;
+	transform: initial;
+}
+
+.stgh-h2-div
+{
+	position: absolute;
+	height: auto;
+	top: 18vh;
+	right: 11vw;
+}
+
+.stgh-flex
+{
+	margin-top: 27vh;
+	max-height: 73vh;
+}
+
+.stgh-img
+{
+	padding-top: 31%;
+}
+
+.stgh-ul
+{
+	padding-left: 0;
+}
+
+.stgh-txt
+{
+	padding-right: 0;
+	width: 50%;
+}
+
+.navigation
+{
+	display: flex;
+	width: 100vw;
+	height: 17vh;
+	padding-top: 9vh; 
+
+	justify-content: space-around;
+
+	font-family: 'Butler', serif;
+	font-weight: 700; 
+	font-size: 2.5rem;
+
+	position: relative;
+	background-color: white;
+}
+
+@media (min-width: 450px)
+{
+	.biominus
+	{
+		display: none;
+	}
+	
+	.bg
+	{
+		left: auto;
+	}
+
+	.bioh3
+	{
+		text-align: center;
+	}
+
+	.bimgdiv
+	{
+		text-align: center;
+	}
+
+	.bioimg
+	{
+		transform: initial;
+	}
+
+}
+
+@supports (writing-mode: vertical-rl) 
+{
+	.t-form
+	{
+		transform: initial;
+		writing-mode: initial; 
+	}
+
+	.hbio
+	{
+		writing-mode: initial; 
+	}
+}
