@@ -5,23 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/fonts.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/mobile.css" rel="stylesheet" media="(max-width: 899px)">
 		<title>Mod Studio</title>
 	</head>
 	<body>
 		<div class="maket"></div>
 		<!-- основная часть страницы -->
 		<main>
-			<!-- меню в основной секции в отсутствие хедера --> 
-			<nav class="invisible">
-				<a href="#biography">Biography</a>
-				<a href="#designers">Designers</a>
-				<a href="#testimonials">Testimonials</a>
-				<a href="#strengths">Strong points</a> 
-			</nav>
 			<!-- основная информация страницы -->
 			<article>
 				<!-- Hero page -->
-				<!-- p class="menu">&#9776</p-->
+				<div class="menu">
+					<p class="menu">&#9776</p>
+				</div>
 				<section class="logoOuter">
 					<img class="bg" src="pic/bg.png">
 					<div class="to-center logoInner">
@@ -36,9 +32,9 @@
 						<div class="bimgdiv">
 							<img class="bioimg obj-fit" src="pic/katy.png" alt="Katya Mills Photo">
 						</div><div class="biodiv">
-							<h3 class="bioh3">Katya<br>Mills</h3>
+							<h3 class="bioh3">Katya Mills</h3>
 							<p class="biop">Art Director<br>
-							Scenography / Styling / Creative photography / Design</p>
+							Scenography / Styling / Creative&nbspphotography&nbsp/ Design</p>
 							<p class="biominus">-</p>
 							<blockquote class="biobq">“The more I deal with the work as something that is my own, 
 							as something that is personal, the more successful it is.”</blockquote>
@@ -48,7 +44,7 @@
 				<!-- информационный блок -->
 				<section id="designers">
 					<h2 class="designers">Designers</h2>
-					<div class="designers">
+					<div class="abs-50-50 designers">
 						<figure class="designers-all designers-jess roboto-light-1rem">
 							<img class="designers" src="pic/jess.png" alt="Jess Wonder Photo">
 							<figcaption class="jess">
@@ -94,7 +90,7 @@
 						<div class="smallimg col-4 row-1">
 							<!-- отзыв в форме цитаты -->
 							<blockquote class="test-quote">I just really want to do good work&nbspand work with some great people, people who challange me.</blockquote>
-							<img src="pic/test.png" alt="Testimonials Image">
+							<img class="test-small-img" src="pic/test.png" alt="Testimonials Image">
 						</div>
 					</div>
 				</section>
@@ -133,8 +129,15 @@
 								<img src="pic/stgh2.png" alt="Strengths third Image">
 							</div>
 						</div>
-					<div>
+					</div>
 				</section>
+				<!-- меню в основной секции в отсутствие хедера --> 
+				<nav class="navigation">
+					<a href="#biography">B</a>
+					<a href="#designers">D</a>
+					<a href="#testimonials">T</a>
+					<a href="#strengths">S</a> 
+				</nav>
 			</article>
 		</main>
 	</body>
