@@ -44,13 +44,12 @@ main
 {
 	display: none;
 }
-/*
-p.menu 
+
+
+div.menu 
 {
-	text-align: center;
-	font-size: 2rem;
+	display: none;
 }
-*/
 
 section
 {
@@ -452,6 +451,11 @@ figcaption.jess
 	font-size: 5.5rem;
 }
 
+.navigation
+{
+	display: none;
+}
+
 @supports (display: grid) 
 {
 	.test-grid
@@ -625,3 +629,4 @@ figcaption.jess
 		transform: translateY(-40%);
 	}
 }
+

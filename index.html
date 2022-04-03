@@ -5,23 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/fonts.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/mobile.css" rel="stylesheet" media="(max-width: 899px)">
 		<title>Mod Studio</title>
 	</head>
 	<body>
 		<div class="maket"></div>
 		<!-- основная часть страницы -->
 		<main>
-			<!-- меню в основной секции в отсутствие хедера --> 
-			<nav class="invisible">
-				<a href="#biography">Biography</a>
-				<a href="#designers">Designers</a>
-				<a href="#testimonials">Testimonials</a>
-				<a href="#strengths">Strong points</a> 
-			</nav>
 			<!-- основная информация страницы -->
 			<article>
 				<!-- Hero page -->
-				<!-- p class="menu">&#9776</p-->
+				<div class="menu">
+					<p class="menu">&#9776</p>
+				</div>
 				<section class="logoOuter">
 					<img class="bg" src="pic/bg.png">
 					<div class="to-center logoInner">
@@ -94,7 +90,7 @@
 						<div class="smallimg col-4 row-1">
 							<!-- отзыв в форме цитаты -->
 							<blockquote class="test-quote">I just really want to do good work&nbspand work with some great people, people who challange me.</blockquote>
-							<img src="pic/test.png" alt="Testimonials Image">
+							<img class="test-small-img" src="pic/test.png" alt="Testimonials Image">
 						</div>
 					</div>
 				</section>
@@ -135,6 +131,13 @@
 						</div>
 					</div>
 				</section>
+				<!-- меню в основной секции в отсутствие хедера --> 
+				<nav class="navigation">
+					<a href="#biography">B</a>
+					<a href="#designers">D</a>
+					<a href="#testimonials">T</a>
+					<a href="#strengths">S</a> 
+				</nav>
 			</article>
 		</main>
 	</body>
