@@ -55,6 +55,7 @@ p.menu
 section
 {
 	position: relative;
+	width: 100vw;
 	height: 100vh;
 	min-height: 700px;
 }
@@ -150,6 +151,7 @@ h2.logoInner
 	font-family: 'Butler', serif;
 	font-size: 1em;
 	font-weight: 400; 
+	width: 50%;
 }
 
 .biop
@@ -159,6 +161,7 @@ h2.logoInner
 	font-size: 0.2em;
 	font-weight: 500;
 }
+
 .biominus
 {
 	font-size: 0.7em;
@@ -190,13 +193,9 @@ h2.logoInner
 }
 
 div.designers
-{
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	transform: translateY(12%);
+{ 
+	position: absolute; 
+	transform: translateY(-56%); 
 }
 
 .designers-all.designers-jess
@@ -212,12 +211,13 @@ img.designers
 }
 
 h2.designers
-{
-	position: absolute;
-	left: 69%;
-	top: 14%;
-	transform: rotate(0.75turn);
-	transform-origin: bottom;
+{ 
+	position: absolute; 
+	left: 70%; 
+	top: 46%; 
+	margin-top: -300px; 
+	transform: rotate(-0.25turn) translateX(-100%); 
+	transform-origin: top left; 
 }
 
 .designers-all
@@ -245,18 +245,20 @@ figcaption.jess
 .abs-50-50
 {
 	position: absolute;
-	left: 50%;
+	left: 0%;
 	top: 50%;
+	right: 0%;
 }
 
 .test-grid
 {
 	display: flex;
 	justify-content: space-between;
-	height: 85%;
+	max-height: 85%;
 	width: 77%;
 
-	transform: translate(-56%, -40%);
+	transform: translateY(-40%);
+	margin-left: 7%;
 }
 
 .col-1
@@ -393,7 +395,7 @@ figcaption.jess
 
 .stgh-all
 {
-	transform: translate(-50%, -58%);
+	transform: translateY(-58%);
 	width: 100%;
 }
 
@@ -457,9 +459,9 @@ figcaption.jess
 		display: grid;
 		grid-template-columns: 6% 44% 25% 19%;
 		justify-content: start;
-		width: 82%;
+		width: 83%;
 
-		transform: translate(-52%, -40%);
+		transform: translateY(-40%);
 	}
 
 	.all-links
@@ -485,10 +487,23 @@ figcaption.jess
 {
 	h2.designers
 	{
-		left: 70%;
-		top: 12%;
-		transform: rotate(0);
-		writing-mode: vertical-rl;
+		transform: rotate(-180deg) translateY(15%); 
+		transform-origin: center; 
+		writing-mode: vertical-rl; 
+	}
+
+	.t-form
+	{
+		transform: rotate(-180deg) translateY(15%);
+		transform-origin: center;
+		writing-mode: vertical-rl; 
+	}
+
+	.hbio
+	{
+		transform: rotate(-180deg) translate(5vw, -83vh);
+		transform-origin: center;
+		writing-mode: vertical-rl; 
 	}
 }
 
@@ -499,16 +514,18 @@ figcaption.jess
 		transform: rotate(0.75turn) translateX(-850%);
 	}
 
-	h2.designers
+	.test-grid
 	{
-		top: 10%;
+		height: 85%;
 	}
 
 	@supports (writing-mode: vertical-rl) 
 	{
-		h2.designers
+		.hbio
 		{
-			top: 5%;
+			transform: rotate(-180deg) translate(5vw, -700%);
+			transform-origin: center;
+			writing-mode: vertical-rl; 
 		}
 	}
 }
@@ -520,16 +537,13 @@ figcaption.jess
 		transform: rotate(0.75turn) translateX(-700%);
 	}
 
-	h2.designers
-	{
-		top: 10%;
-	}
-
 	@supports (writing-mode: vertical-rl) 
 	{
-		h2.designers
+		.hbio
 		{
-			top: 5%;
+			transform: rotate(-180deg) translate(5vw, -700%);
+			transform-origin: center;
+			writing-mode: vertical-rl; 
 		}
 	}
 }
@@ -541,8 +555,10 @@ figcaption.jess
 		display: flex;
 		justify-content: space-between;
 		width: 95%;
+		max-width: 95%;
 
-		transform: translate(-55%, -40%);
+		transform: translateY(-40%);
+		margin-left: 0%;
 	}
 
 	.col-4
@@ -569,8 +585,10 @@ figcaption.jess
 			grid-template-columns: 6% 60% 25%;
 			justify-content: start;
 			width: 100%;
+			max-width: 100%;
+			margin-left: 1%;
 
-			transform: translate(-50%, -40%);
+			transform: translateY(-40%);
 		}
 
 		.all-links
@@ -590,3 +608,20 @@ figcaption.jess
 	}
 }
 
+@media(min-width: 1450px)
+{
+	div.designers
+	{
+		transform: translateY(-40%);
+	}
+
+	.test-grid
+	{
+		transform: translateY(-20%);
+	}
+
+	.stgh-all
+	{
+		transform: translateY(-40%);
+	}
+}
