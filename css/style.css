@@ -55,7 +55,6 @@ p.menu
 section
 {
 	position: relative;
-	width: 100vw;
 	height: 100vh;
 	min-height: 700px;
 }
@@ -605,23 +604,5 @@ figcaption.jess
 	{
 		left: 2%;
 		bottom: -65%;
-	}
-}
-
-@media(min-width: 1450px)
-{
-	div.designers
-	{
-		transform: translateY(-40%);
-	}
-
-	.test-grid
-	{
-		transform: translateY(-20%);
-	}
-
-	.stgh-all
-	{
-		transform: translateY(-40%);
 	}
 }
