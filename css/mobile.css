@@ -1,0 +1,13 @@
+main
+{
+	max-width: 56.25rem;
+	min-width: 23rem;
+	margin: auto;
+}
+
+.maket
+{
+	background: url("../pic/maket-small.png") no-repeat center;
+	height: 4641px;
+	width: 428px;
+}
