@@ -1,0 +1,17 @@
+@media screen and (min-width: 900px) {
+
+	.maket
+	{
+		background: url("../pic/maket.jpg") no-repeat center;
+		height: 4559px;
+		width: 1440px;
+	}
+
+	main
+	{
+		margin: auto;
+		max-width: 90rem;
+		min-width: 56.25rem;
+	}
+
+}
