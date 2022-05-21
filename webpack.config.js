@@ -27,6 +27,11 @@ module.exports =
 						use: [MiniCssExtractPlugin.loader, "css-loader", MediaQueryPlugin.loader]
 					},
 					{
+						test: /\.(jpg|png|gif|svg)$/,
+						loader: 'image-webpack-loader',
+						enforce: 'pre'
+					},
+					{
 						test: /\.(png|jpe?g|gif)$/i,
 						loader: "file-loader",
 						options: {
