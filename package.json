@@ -10,7 +10,7 @@
     "clean-public": "rm ./public/ -r",
     "server": "webpack server",
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public"
   },
   "author": "",
   "license": "ISC",
