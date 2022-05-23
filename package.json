@@ -8,7 +8,9 @@
     "build": "webpack",
     "clean-dev": "rm ./dev/ -r",
     "clean-public": "rm ./public/ -r",
-    "server": "webpack server"
+    "server": "webpack server",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -23,9 +25,9 @@
     "file-loader": "^6.2.0",
     "html-minimizer-webpack-plugin": "^3.5.0",
     "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.1.0",
     "media-query-plugin": "^1.5.0",
     "mini-css-extract-plugin": "^2.6.0",
-    "image-webpack-loader": "^8.1.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
@@ -38,6 +40,7 @@
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.72.1",
