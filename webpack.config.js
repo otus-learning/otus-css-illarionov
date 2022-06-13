@@ -33,7 +33,7 @@ module.exports =
 						enforce: 'pre'
 					},
 					{
-						test: /\.(png|jpe?g|gif)$/i,
+						test: /\.(png|jpe?g|gif|avif)$/i,
 						loader: "file-loader",
 						options: {
 							name: "/pic/[name].[ext]",
