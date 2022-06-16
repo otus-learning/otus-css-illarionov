@@ -3,17 +3,17 @@ if (window.innerWidth > 900) {
     import("../css/style-desktop.css");
 }
 
-import "../pic/bg.png";
-import "../pic/bg-mobile.jpg";
-import "../pic/cameron.png";
-import "../pic/jess.png";
-import "../pic/katy.png";
-import "../pic/katy-mobile.jpg";
-import "../pic/louisse.png";
-import "../pic/stgh1.png";
-import "../pic/stgh2.png";
-import "../pic/stgh3.png";
-import "../pic/test.png";
+import "../pic/bg.avif";
+import "../pic/bg-mobile.avif";
+import "../pic/cameron.avif";
+import "../pic/jess.avif";
+import "../pic/katy.avif";
+import "../pic/katy-mobile.avif";
+import "../pic/louisse.avif";
+import "../pic/stgh1.avif";
+import "../pic/stgh2.avif";
+import "../pic/stgh3.avif";
+import "../pic/test.avif";
 
 
 tailwind.config = {

@@ -1,7 +1,6 @@
 const path = require('path');
 const MediaQueryPlugin = require('media-query-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -12,9 +11,11 @@ module.exports =
 		{
 			entry: "./src/script/tailwind.config.js",
 			mode: "production",
+			name: "prod-cfg",
 			output: {
 				filename: "script/tailwind.config.js",
 				path: path.resolve(__dirname, "public"),
+				clean:true,
 			},
 			module: {
 				rules: [
@@ -32,10 +33,17 @@ module.exports =
 						enforce: 'pre'
 					},
 					{
-						test: /\.(png|jpe?g|gif)$/i,
+						test: /\.(png|jpe?g|gif|avif)$/i,
 						loader: "file-loader",
 						options: {
 							name: "/pic/[name].[ext]",
+						}
+					},
+					{
+						test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
+						type: "asset/resource",
+						generator: {
+							filename: "fonts/[hash][ext][query]"
 						}
 					},
 				]
@@ -48,7 +56,6 @@ module.exports =
 				minimize: true,
 			},
 			plugins:[
-				new CleanWebpackPlugin(),
 				new HtmlWebpackPlugin({
 					filename: "index.html",
 					template: "./src/index.html", 
@@ -64,14 +71,16 @@ module.exports =
 						"screen and (min-width: 900px)": "desktop"
 					}
 				}),
-			],
+			]
 		},
 		{
 			entry: "./src/script/tailwind.config.js",
 			mode: "development",
+			name: "dev-cfg",
 			output: {
 				filename: "script/tailwind.config.js",
 				path: path.resolve(__dirname, "dev"),
+				clean:true,
 			},
 			module: {
 				rules: [
@@ -90,32 +99,21 @@ module.exports =
 							name: "/pic/[name].[ext]",
 						}
 					},
-				]
+				]},
+				plugins:[
+					new HtmlWebpackPlugin({
+						filename: "index.html",
+						template: "./src/index.html", 
+					}),
+				],
+				devServer:
+				{
+					static: {
+							directory: path.join(__dirname, 'dev'),
+					},
+					compress: false,
+					open: "/",
+					port: 8080,
+				}
 			},
-			plugins:[
-				new CleanWebpackPlugin(),
-				/*
-				new CopyWebpackPlugin({
-					patterns: [
-							{from: "./src/pic/", to: "./pic"},
-							{from: "./src/css/", to: "./css"},
-							{from: "./src/fonts/", to: "./fonts"},
-					]
-				
-				}),*/
-				new HtmlWebpackPlugin({
-					filename: "index.html",
-					template: "./src/index.html", 
-				}),
-			],
-			devServer:
-			{
-				static: {
-						directory: path.join(__dirname, 'dev'),
-				},
-				compress: false,
-				open: "/",
-				port: 8080,
-			}
-		},
 	]
